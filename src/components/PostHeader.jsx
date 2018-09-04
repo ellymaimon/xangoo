@@ -2,7 +2,6 @@ import React from "react";
 
 function PostHeader(){
   var header = {
-    display: "flex",
     background: "#a6d8f2",
     height: "60px"
   }
