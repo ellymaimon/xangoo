@@ -11,7 +11,7 @@ var masterPostList = [
     image: 'https://via.placeholder.com/50x50',
     title: "Lorem Ipsum",
     content: "Lorem ipsum asoifhoaiehfoiafhaiofoafhafoiahfiosahoih",
-    comment: "Lorem Ipsum"
+    comment: " Lorem Ipsum"
   },
   {
     image: 'https://via.placeholder.com/50x50',
@@ -30,11 +30,7 @@ function PostContent(){
   return (
     <div>
       { masterPostList.map((post, index) =>
-        <Post image={ post.image }
-              title={ post.title}
-              content={ post.content }
-              comment={ post.comment }
-              key={ index }/>
+        <Post {...post} key={index}/>
       )}
     </div>
   );

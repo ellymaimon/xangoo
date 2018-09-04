@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
 import Profile from './Profile'
 import Bio from './Bio'
 import Posts from './Posts'
+import Recs from './Recs'
 
 function Content(){
   return(
@@ -9,6 +10,7 @@ function Content(){
       <Profile/>
       <Bio/>
       <Posts/>
+      <Recs/>
     </div>
   );
 }

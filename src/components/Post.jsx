@@ -1,19 +1,24 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Post(props){
-  let line;
-  if (props.comment) {
-    line = <hr />
-  }
+  const { image, title, content, comment } = props;
   return (
       <div>
-        <img src={props.image} alt=""/>
-        <h2>{props.title}</h2>
-        <p>{props.content}</p>
-        {line}
-        <p>{props.comment}</p>
+        <img src={image} alt=""/>
+        <h2>{title}</h2>
+        <p>{content}</p>
+        { (comment) ? <hr/> : "" }
+        <p>{comment}</p>
       </div>
   );
 }
+
+Post.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  content: PropTypes.string,
+  comment: PropTypes.string
+};
 
 export default Post;

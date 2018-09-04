@@ -6,7 +6,6 @@ function Search(){
       <input type="text" />
       <button>Tweet</button>
     </div>
-
   );
 }
 
