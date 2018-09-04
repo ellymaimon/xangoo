@@ -57,5 +57,5 @@ module.exports = {
       title: 'React Help Queue',
       filename: resolve(__dirname, "build", "index.html"),
     }),
-  ]\
+  ]
 };

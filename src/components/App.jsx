@@ -1,8 +1,13 @@
 import React from 'react';
+import Header from "./Header";
+import Content from './Content'
 
 function App(){
   return(
-    <h1>Hey</h1>
+    <div>
+      <Header />
+      <Content />
+    </div>
   );
 }
 
